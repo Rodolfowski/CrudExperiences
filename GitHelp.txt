@@ -1,0 +1,36 @@
+MUDANÇAS NO LOCAL
+git init;
+git status;
+git add * (ou git add index.html);
+git commit -m "Primeiro Commit para MB";
+
+Apos fazer uma mudança
+git status (mostra MODIFIED);
+git add * (muda o commit)
+git status (Mostra que houve mudanças e foi recomitado)
+
+git add -A (adiciona todos os arquivos );
+git status (todos os arquivos adicionados);
+git commit -m "Novo Commit para MB";
+
+REVERTER MUDANÇAS
+git log (Mostra todos os commits e mudanças);
+git checkout 7DIGITOSAQUI (035E986)  (Mostra todos os commits);
+git branch (GRUPO DE CÓDICOS PROPRIETÁRIO MASTER)
+git checkout -b RODOLFOWSKI (Cria nova branch Rodolfowski);
+
+MUDANÇAS NO ONLINE
+ssh -T git@github.com (Mostra se está sincronizado)
+git remote -v  (mostra quais repositórios estão sincronizados)
+git remote add Nome_remoto_do_repositório git@github.com:Rodolfowski/DevExperiences.git  (ADICIONA UM NOVO REPOSITÓRIO COM O Nome_remoto_do_repositório)
+git add -A
+git commit -m "qualquer nome"
+git pull DevExperiences master --allow-unrelated-histories (pega arquivos do repositório) (faz os dois comandos em 1 git fetch + git merge(mesclar))
+git push DevExperiences master (Joga tudo para a nuvem que foi commitado)
+
+para remover qualquer arquivo do Git (pastas) é necessário fazer os seguintes passos
+
+git rm -r --cached FolderName
+git commit -m "Removed folder from repository"
+git push origin master
+
