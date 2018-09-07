@@ -1,0 +1,36 @@
+body.sigin-body{
+  /*background-color:#e6f2ff;*/
+  background-color: #272361;
+}
+.container.sigin-container{
+  margin-top: 10%;
+}
+.card.sigin-card{
+  padding: 20px 0px 20px;
+  background-color:#f4f4f4;
+  box-shadow: 4px 4px 7px rgba(0,0,0,.45);
+  -webkit-box-shadow: 4px 4px 7px rgba(0,0,0,.45);
+  -moz-box-shadow: 4px 4px 7px rgba(0,0,0,.45);
+  }
+img.sigin-image{
+  padding: 0 2rem 2rem;
+  margin:auto;
+  display: block;
+}
+form.sigin-form{
+max-width: 360px;
+margin: auto;
+}
+button.btn-sigin{
+color:#ffffff;
+background-color:#272361;
+width: 100%;
+margin-bottom: 15px;
+}
+a.create-new-account{
+  font-size:18px;
+  color:#ffffff;
+  margin-top:20px;
+  text-align: center;
+  display: block;
+}
