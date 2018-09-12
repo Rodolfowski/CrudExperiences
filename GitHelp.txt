@@ -28,15 +28,8 @@ git commit -m "qualquer nome"
 git pull DevExperiences master --allow-unrelated-histories (pega arquivos do repositório) (faz os dois comandos em 1 git fetch + git merge(mesclar))
 git push DevExperiences master (Joga tudo para a nuvem que foi commitado)
 
-<<<<<<< HEAD
-<<<<<<< HEAD
+
 PARA REMOVER QUALQUER ARQUIVO DO GIT (PASTAS) É NECESSÁRIO FAZER OS SEGUINTES PASSOS
-=======
-para remover qualquer arquivo do Git (pastas) é necessário fazer os seguintes passos
->>>>>>> 8febb9e7aee1190ab3bcfd056d294a8e21202921
-=======
-para remover qualquer arquivo do Git (pastas) é necessário fazer os seguintes passos
->>>>>>> 8febb9e7aee1190ab3bcfd056d294a8e21202921
 
 git rm -r --cached FolderName
 git commit -m "Removed folder from repository"
