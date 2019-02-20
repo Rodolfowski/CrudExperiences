@@ -1,3 +1,7 @@
+PARA WINDOWS:
+CMDER 
+"https://cmder.net/"
+
 MUDANÇAS NO LOCAL
 git init;
 git status;
