@@ -15,7 +15,7 @@ git commit -m "Novo Commit para MB";
 
 REVERTER MUDANÇAS
 git log (Mostra todos os commits e mudanças);
-git checkout 7DIGITOSAQUI (035E986)  (Mostra todos os commits);
+git checkout 7DIGITOSAQUI (035E986)  (Volta o .js a versão do commit apresentada);
 git branch (GRUPO DE CÓDICOS PROPRIETÁRIO MASTER)
 git checkout -b RODOLFOWSKI (Cria nova branch Rodolfowski);
 
@@ -28,10 +28,17 @@ git commit -m "qualquer nome"
 git pull DevExperiences master --allow-unrelated-histories (pega arquivos do repositório) (faz os dois comandos em 1 git fetch + git merge(mesclar))
 git push DevExperiences master (Joga tudo para a nuvem que foi commitado)
 
-
 PARA REMOVER QUALQUER ARQUIVO DO GIT (PASTAS) É NECESSÁRIO FAZER OS SEGUINTES PASSOS
-
 git rm -r --cached FolderName
 git commit -m "Removed folder from repository"
 git push origin master
+
+BAIXAR UM REPOSITÓRIO
+git clone https://git.com/repo.git
+
+VER BRANCH'S REMOTAS
+git branch -r 
+
+CLONAR UMA BRANCH REMOTA PARA LOCAL
+git checkout --track Nome_Da_Branch 
 

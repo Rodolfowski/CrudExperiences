@@ -1,0 +1,27 @@
+Opensuse :
+
+$sudo zypper in ruby2.5-rubygem-sass
+
+Após instalar e criar o style.sass , digite no terminal o seguinte comando para auto-complilar para css tudo o que for feito no sass
+$sass --watch styles.sass:styles.css 
+
+SaSS não possui {} e também é possivel criar variáveis nele com $Nome_da_Variável:
+
+.body
+    background-color: $Nome_da_Variável
+
+Para fazer uma função para ele fazemos da seguinte forma:
+
+=shaping($height, $width, $rad, $bg, $color)
+  height:                 $height
+  width:                  $width
+  -webkit-border-radius:  $rad
+  -moz-border-radius:     $rad
+  -ms-border-radius:      $rad
+  border-radius:          $rad
+  background-color:       $bg
+  color:                  $color
+  
++shaping(120px, 120px, 10%, $brand-dark, $brand-light)
+  margin: 0 435px -90px
+    
