@@ -1,0 +1,27 @@
+/src/app
+Every application has an module and a component.
+
+
+/src/assets
+Hold all assets like an image of your application.
+
+
+/src/enviroment
+Holds default configurations for production enviroment and development enviroment.
+
+/src
+
+favicon.icon - Icon that displays in the top of our application
+index.html - the Root of our application
+main.ts - Starting point of our application - App is bootstrapping the aplications
+polyfills.ts - Require some scripts to run angular in Browsers
+style.css - Globla Style for application.
+test.ts - Used to test our enviroment
+
+/
+.editorconfig - Make a default for all who is going to use this application to development.
+.gitignore - Control version script
+ Package.json - Every Node project has this file,treat dependencies of your application.
+
+ tsconfig.json -typescript compiler configurations
+ tslint.json - check typescript code for funtionalities.
