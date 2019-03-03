@@ -1,3 +1,0 @@
-about:config
-processHang
-turn both to false and be happy
