@@ -1,0 +1,30 @@
+<div class="card">
+  <div class="card-body">
+  <h3 class="card-title">Empregados e Cargos</h3>
+  <table class="table table-hover"style="text-align:center">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nome</th>
+        <th>Cargo</th>
+        <th>Operações</th>
+      </tr>
+    </thead>
+<tbody>
+<tr *ngFor="let employed of employees">
+  <td>{{employed._id}}</td>
+  <td>{{employed.nome}}</td>
+  <td>{{employed.cargo}}</td>
+
+  <td> <button style="margin:10px"class="btn btn-warning"(click)="doUpdate(employed)">Alterar</button>
+    <button class="btn btn-danger"(click)="doDelete(employed)">Deletar</button>
+    </td>
+</tr>
+</tbody>
+
+
+
+</table>
+</div>
+
+</div>

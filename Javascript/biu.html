@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+
+</head>
+
+ 
+
+<body>
+
+ 
+
+    <script>
+
+        /**
+
+        * Funcion para calcular si el numero es multiplo
+
+        * utilizando el modulo de la division
+
+        */
+
+        function multiple(valor, multiple)
+
+        {
+
+            resto = valor % multiple;
+
+            if(resto==0)
+
+                return true;
+
+            else
+
+                return false;
+
+        }
+
+ 
+
+        // Arrays que contendran los valores multiples del 3 y del 5
+
+        var multiples_3=[];
+
+        var multiples_5=[];
+
+ 
+ var somatodos;
+       
+        // bucle del 1 al 100
+
+        for(var i=1;i<10;i++)
+
+        {
+
+            if(multiple(i,3)){
+
+
+                multiples_3.push(i);
+       ;         
+}
+ 
+
+            if(multiple(i,5)){
+         
+                multiples_5.push(i);
+                
+             
+                }
+                
+         }
+ var sum=0;        
+ var myarray=multiples_3.concat(multiples_5);        
+for (i = 0; i <myarray.length ; i++) {
+   
+   sum += myarray[i];
+   
+  }
+                
+        
+
+        document.write("multiplos de 3: ",multiples_3);
+
+        document.write("<br>multiplos de 5 : ",multiples_5);
+        
+        document.write("<br> Os elementos do vetor ",myarray.sort());
+        
+        document.write("<br>Soma dos multiplos de 3 e 5: ",sum);
+
+    </script>
+
+ 
+
+</body>
+
+</html>

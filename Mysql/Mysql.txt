@@ -1,0 +1,88 @@
+Comandos Básicos de Mysql
+
+Como acessar o Mysql no LocalHost
+$mysql -u root -p
+
+Criando um banco de dados
+create database if not exists nome_do_banco
+default character set utf8
+default collate utf8_general_ci;
+
+Criando uma tabela
+Exemplo1:
+create table pessoas(
+id int not null auto_increment,
+nome varchar(30) not null,
+nascimento date,
+sexo enum('M','F'),
+peso decimal(5,2), //5 Números 2 após a virgula
+altura decimal(3,2)
+nacionalidade varchar(30) default 'Reino unido',primary key (id)
+)default charset =utf8;
+
+Exemplo2:
+create table cursos(
+id int not null auto_increment primary_key,
+nome varchar(30) not null unique, //cursos com nome unico
+descricao text,
+carga int unsigned, //carga horária não será negativa
+totalaulas int,
+ano year default '2016')default charset =utf8;
+
+
+Inserindo dados em uma tabela(Ref:Exemplo1)
+insert into pessoas values(default,'Rodolfo','1992-04-13','M','90.0','1.78','Brasil');
+
+Alterando uma tabela e adicionando uma coluna após a coluna nome
+alter table pessoas
+add column profissao varchar(10) after nome;
+
+Modificar uma coluna mudando seu type
+alter table pessoas
+modify column profissao varchar(20) not null default '';
+
+Mudando o nome de uma coluna e seu atributo
+alter table pessoas
+change column profissao prof varchar(25);
+
+Mudando o nome de uma tabela
+alter table pessoas
+rename to clientes;
+
+Apagando uma coluna
+alter table pessoas
+drop column profissao;
+
+Mostrar banco de dados/tabelas
+show databases;
+show tables;
+
+Selecionar o banco de dados para uso
+use nome_do_banco;
+
+Mostrar tabela com tuplas e seus tipos
+describe nome_da_tabela;
+
+Exportar uma cópia(DUMP)do banco de dados
+mysqldump -u root -p produtos > produtos.sql;
+
+Importar um banco de dados para o mysql
+mysql -u root -p produtos < produtos.sql;
+
+Apagar banco de dados/tabela;
+drop database nome_do_banco_de_dados;
+drop table nome_da_tabela;
+
+----- Data Definition Language(DDL) -----
+CREATE
+
+
+ALTER 
+DROP
+
+----- Data Manipulation Language(DML) -----
+INSERT
+UPDATE
+DELETE
+
+

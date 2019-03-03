@@ -1,0 +1,19 @@
+GET - FAZ UMA REQUISIÇÃO E RECEBE
+PUT - ALTERA UMA INFORMAÇÃO EXISTENTE NO SERVER 
+POST - CRIA UMA NOVA INFORMAÇÃO(CONCLUSÃO DE CURSO);
+DELETE - APAGA DADOS NO SERVER SIDE 
+
+npm install readline-sync     //Dependencia para SCANF do node
+module.exports = print;    //exporta funcao dentro de um arquivos nome print
+var printer = require('./print');     //inclui a função para o novo arquivo
+
+FAZENDO UMA API
+
+npm init para criar o package  //(Package para controle de versões e para controle de dependencias) 
+npm install --save express  //(instalar para trabalhar com requisições REST WEBSERVER)
+npm install --save body-parser  //(Permite a troca de objetos por requisições get e post MIDDLEWARE) 
+npm install -g nodemon  //(Para nao reiniciar toda hora o server no -g que é modo global ele instala no node para qualquer aplicação que eu for desenvolver)
+npm install //(Instala toda e qualquer modulo que tenha dependencia que nao esteja instalado no projeto
+
+
+nodemon server.js
